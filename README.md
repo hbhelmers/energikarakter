@@ -1,6 +1,6 @@
 # Energikarakter
 
-A regression model that predicts the energikarakter (A–G) of a Norwegian home from building type, year built, construction material and location, with a small web app on top.
+A regression model that predicts the energikarakter (A–G) of a Norwegian home from building type, year built, construction material and location, with a small web app on top. The model part is a slight modification of an earlier version of a group project from 2025.
 
 Data: Enova Energimerkesystemet - Offentlige data https://data.enova.no/.
 
@@ -21,7 +21,7 @@ The full evaluation and conclusion are at the end of the notebook.
 
 ```
 notebooks/   training notebook (data -> model)
-data/        Enova CSV files (not in git lol)
+data/        CSV files (not in git lol)
 models/      trained model, energikarakter_model.joblib (not in git either)
 backend/     FastAPI app that loads the model and serves /api/predict and /api/options
 frontend/    React app (Vite) with the form for the prediciton
