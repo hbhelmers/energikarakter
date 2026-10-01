@@ -1,0 +1,10 @@
+pandas
+scikit-learn==1.9.1  # must match the version the saved model was trained with
+matplotlib
+seaborn
+requests
+joblib
+jupyter
+python-dotenv
+fastapi
+uvicorn

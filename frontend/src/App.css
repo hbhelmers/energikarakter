@@ -1,0 +1,129 @@
+main {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 48px 16px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+
+.intro {
+  margin: 0 0 24px;
+  color: var(--muted);
+}
+
+form {
+  display: grid;
+  gap: 16px;
+  padding: 24px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+label {
+  display: grid;
+  gap: 4px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+input,
+select {
+  font: inherit;
+  font-weight: 400;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+}
+
+button {
+  font: inherit;
+  font-weight: 600;
+  padding: 10px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.error {
+  color: #b42318;
+}
+
+.result {
+  margin-top: 24px;
+  padding: 24px;
+  text-align: center;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.result > p:first-child {
+  margin: 0;
+  color: var(--muted);
+}
+
+.grade {
+  display: inline-grid;
+  place-items: center;
+  width: 96px;
+  height: 96px;
+  margin: 12px 0;
+  border-radius: 16px;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.scale {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin: 0 0 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.scale li {
+  width: 32px;
+  padding: 2px 0;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+  opacity: 0.35;
+}
+
+.scale li.active {
+  opacity: 1;
+  outline: 2px solid var(--text);
+  outline-offset: 1px;
+}
+
+.note {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* Colours from the official energy label scale */
+.grade-A { background: #00843d; }
+.grade-B { background: #4fa83d; }
+.grade-C { background: #a4c72d; }
+.grade-D { background: #f2d300; }
+.grade.grade-D,
+.scale li.grade-D { color: #1f2328; }
+.grade-E { background: #f2a600; }
+.grade-F { background: #e5621f; }
+.grade-G { background: #d7191c; }
